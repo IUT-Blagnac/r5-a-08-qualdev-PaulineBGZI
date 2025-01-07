@@ -7,7 +7,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class StepDefinitions {
-
     @Given("an example scenario")
     public void anExampleScenario() {
     }
@@ -20,11 +19,8 @@ public class StepDefinitions {
     public void theScenarioPasses() {
     }
 
-}
-
-class IsItFriday {
     static String isItFriday(String today) {
-        return "Friday".equalsIgnoreCase(today) ? "TGIF" : "Nope";
+        return "Friday".equals(today) ? "TGIF" : "Nope";
     }
 
     private String today;
@@ -34,7 +30,7 @@ class IsItFriday {
     public void today_is(String day) {
         today = day;
     }
-
+    
     @When("I ask whether it's Friday yet")
     public void i_ask_whether_it_s_friday_yet() {
         actualAnswer = isItFriday(today);
@@ -44,4 +40,5 @@ class IsItFriday {
     public void i_should_be_told(String expectedAnswer) {
         assertEquals(expectedAnswer, actualAnswer);
     }
+
 }
