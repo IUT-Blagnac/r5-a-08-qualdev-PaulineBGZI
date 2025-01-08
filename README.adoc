@@ -28,38 +28,32 @@ image::TP1.png[width=80%]
 == TP2
 
 .Order.java
+[source,java]
 ---
  package dojo;
-
  import java.util.ArrayList;
  import java.util.List;
- 
  class Order {
      private String owner;
      private String target;
      private List<String> cocktails;
- 
      public Order() {
          this.cocktails = new ArrayList<>();
      }
- 
      void declareOwner(String owner) {
          this.owner = owner;
      }
- 
      void declareTarget(String target) {
          this.target = target;
      }
- 
      void addCocktail(String cocktail) {
          this.cocktails.add(cocktail);
      }
- 
      List<String> getCocktails() {
          return this.cocktails;
      }
  }
- ---
+---
 
- .Capture d'écran du résultat
- image::TP2.png[width=80%]
+.Capture d'écran du résultat
+image::TP2.png[width=80%]
