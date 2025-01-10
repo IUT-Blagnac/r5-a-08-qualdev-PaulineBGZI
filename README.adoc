@@ -74,5 +74,5 @@ Feature: Product basket
     And the overall list is characters
 ---
 
-.Capture d'écran du résultat
+.Capture d'écran du résultat (fait en binôme avec Julien Bernard)
 image::TP3.png[width=80%]
